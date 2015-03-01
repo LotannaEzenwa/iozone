@@ -10,6 +10,7 @@
 		5E1DC28A1AA2C245002F5FA0 /* AppOne.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E1DC2891AA2C245002F5FA0 /* AppOne.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E1DC2901AA2C246002F5FA0 /* AppOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1DC2841AA2C245002F5FA0 /* AppOne.framework */; };
 		5E1DC2971AA2C246002F5FA0 /* AppOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DC2961AA2C246002F5FA0 /* AppOneTests.swift */; };
+		5E1DC2A11AA2C5B6002F5FA0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1DC2A01AA2C5B6002F5FA0 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		5E1DC28F1AA2C246002F5FA0 /* AppOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E1DC2951AA2C246002F5FA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1DC2961AA2C246002F5FA0 /* AppOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOneTests.swift; sourceTree = "<group>"; };
+		5E1DC2A01AA2C5B6002F5FA0 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				5E1DC2891AA2C245002F5FA0 /* AppOne.h */,
 				5E1DC2871AA2C245002F5FA0 /* Supporting Files */,
+				5E1DC2A01AA2C5B6002F5FA0 /* main.swift */,
 			);
 			path = AppOne;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				TargetAttributes = {
 					5E1DC2831AA2C244002F5FA0 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = YM27L6RWM9;
 					};
 					5E1DC28E1AA2C246002F5FA0 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -209,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E1DC2A11AA2C5B6002F5FA0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +324,8 @@
 		5E1DC29B1AA2C247002F5FA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,12 +335,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5E1DC29C1AA2C247002F5FA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -395,6 +405,7 @@
 				5E1DC29C1AA2C247002F5FA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E1DC29D1AA2C247002F5FA0 /* Build configuration list for PBXNativeTarget "AppOneTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +414,7 @@
 				5E1DC29F1AA2C247002F5FA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
